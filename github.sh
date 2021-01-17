@@ -13,9 +13,6 @@ function git_clone() {
     done
 }
 
-echo "I can be greatly improved, even migrated to Python in the future!"
-echo "Don't leave me to dust!"
-
 function git_sync() {
     for prj in $(cat projects.list)
     do
@@ -24,3 +21,6 @@ function git_sync() {
         cd -
     done
 }
+
+echo "I can be greatly improved, even migrated to Python in the future!"
+echo "Don't leave me to dust!"
