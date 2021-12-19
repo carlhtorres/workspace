@@ -24,3 +24,5 @@ function git_sync() {
 
 echo "I can be greatly improved, even migrated to Python in the future!"
 echo "Don't leave me to dust!"
+
+git_clone
