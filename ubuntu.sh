@@ -1,7 +1,7 @@
 # Kubuntu 21.10
 sudo add-apt-repository -y multiverse
 sudo apt update && sudo apt upgrade
-sudo apt install -y htop vim screen aptitude
+sudo apt install -y htop vim screen aptitude piper
 
 # DOCKER
 # TURN IDEMPOTENT
