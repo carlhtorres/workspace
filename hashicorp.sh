@@ -15,6 +15,7 @@ if ! vagrant -v; then
     if [ -f ~/Downloads/VMware-Workstation-Full-* ]; then
         sudo bash $(ls ~/Downloads/VMware-Workstation-Full*.bundle | sort | head -n 1)
 	sudo vmware-modconfig --console --install-all
+	dpkg -i ~/Downloads/vagrant-vmware-utility_1.0.22-1_amd64.deb
 	vagrant plugin install vagrant-vmware-desktop
     else
         echo "Download VMware Workstation"
