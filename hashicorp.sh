@@ -11,5 +11,11 @@ fi
 
 # VAGRANT
 if ! vagrant -v; then
-    sudo apt update && sudo apt install vagrant
+    sudo apt update && sudo apt install build-essential vagrant
+    if [ -f ~/Downloads/VMware-Workstation-Full-* ]; then
+        sudo bash $(ls ~/Downloads/VMware-Workstation-Full*.bundle | sort | head -n 1)
+	sudo vmware-modconfig --console --install-all
+    else
+        echo "Download VMware Workstation"
+    fi
 fi
